@@ -84,5 +84,8 @@ dist
 # Service worker
 sw.*
 
+public/assets
+functions/nuxt-dist
+
 # Mac OSX
 .DS_Store

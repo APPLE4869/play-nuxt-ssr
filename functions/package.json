@@ -6,14 +6,20 @@
     "shell": "firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "prebuild": "rm -fr ../public/*",
+    "build": "nuxt build",
+    "postbuild": "cp -R nuxt-dist/dist/client/ ../public/assets"
   },
   "engines": {
     "node": "8"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "firebase-admin": "^8.0.0",
-    "firebase-functions": "^3.0.0"
+    "firebase-functions": "^3.0.0",
+    "nuxt": "^2.8.1",
+    "nuxt-sass-resources-loader": "^2.0.5"
   },
   "devDependencies": {
     "firebase-functions-test": "^0.1.6"
