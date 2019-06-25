@@ -18,8 +18,9 @@
     "express": "^4.17.1",
     "firebase-admin": "^8.0.0",
     "firebase-functions": "^3.0.0",
-    "nuxt": "^2.8.1",
-    "nuxt-sass-resources-loader": "^2.0.5"
+    "nuxt": "^2.0.0",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0"
   },
   "devDependencies": {
     "firebase-functions-test": "^0.1.6"
